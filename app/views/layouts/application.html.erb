@@ -8,6 +8,9 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <%= render 'shared/navbar' %>
+    <hr>
+    <%= render 'shared/notice_alert' %>
     <%= yield :head %>
 
     <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
