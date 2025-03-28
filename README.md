@@ -23,7 +23,7 @@ Siga os passos abaixo para configurar e rodar o projeto localmente:
 
 1. **Clone este repositório**  
    ```bash
-   git clone https://github.com/seu-usuario/e-commerce.git
+   git clone https://github.com/maurobiazutti/e-commerce.git
 
 2. **Acesse o diretorio do projeto**
    ```bash
