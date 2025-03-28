@@ -1,24 +1,49 @@
-# README
+# 🛍️ E-commerce
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este é um projeto de e-commerce desenvolvido com **Ruby e seu framework Ruby on Rails**, focado em oferecer uma experiência simples e eficiente para compradores e vendedores. O sistema inclui funcionalidades como:
 
-Things you may want to cover:
+✅ **Cadastro e autenticação de usuários**  
+✅ **Gestão de produtos e categorias**  
+✅ **Carrinho de compras e checkout**  
+✅ **Sistema de pedidos e notificações**  
+✅ **Processamento de pagamentos**  
 
-* Ruby version
+## 🚀 Tecnologias Utilizadas
 
-* System dependencies
+- **Ruby** Version 3.2.0
+- **Ruby on Rails** Version 8.0.2  
+- **PostgreSQL** Version 14.15
+- **Bootstrap**
+- **Devise**
+- **RSpec**
+  
+## 📌 Como Rodar o Projeto
 
-* Configuration
+Siga os passos abaixo para configurar e rodar o projeto localmente:
 
-* Database creation
+1. **Clone este repositório**  
+   ```bash
+   git clone https://github.com/seu-usuario/e-commerce.git
 
-* Database initialization
+2. **Acesse o diretorio do projeto**
+   ```bash
+   cd e-commerce
 
-* How to run the test suite
+3. **Instale as dependências**
+   ```bash
+   bundle install
 
-* Services (job queues, cache servers, search engines, etc.)
+4. **Configure o banco de dados**
+   ```bash
+   rails db:create db:migrate db:seed
 
-* Deployment instructions
+5. **Inicie o servidor**
+   ```bash
+   rails server
 
-* ...
+6. **Acesse no navegador**
+   ```bash
+   http://localhost:3000
+
+
+Se precisar de ajustes, só avisar! 😊
