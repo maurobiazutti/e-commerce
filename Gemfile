@@ -16,14 +16,27 @@ gem "bootsnap", require: false
 gem "kamal", require: false
 gem "thruster", require: false
 gem "devise", "~> 4.9"
+gem "omniauth"
+gem 'omniauth-google-oauth2'
+gem "omniauth-rails_csrf_protection"
+gem 'devise-i18n'
+gem "rails-i18n", "~> 8.0"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
   gem "brakeman", require: false
   gem "rubocop-rails-omakase", require: false
+  gem "dotenv-rails", "~> 3.1"
+  gem "byebug", "~> 12.0"
 end
 
 group :development do
   gem "web-console"
   gem "letter_opener"
 end
+
+gem "tailwindcss-ruby", "~> 4.0"
+gem "tailwindcss-rails", "~> 4.2"
+
+
+

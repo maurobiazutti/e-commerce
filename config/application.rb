@@ -38,5 +38,10 @@ module ECommerce
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Define o idioma padrão como português do Brasil
+    config.i18n.default_locale = :'pt-BR'
+    # Carrega todos os arquivos de tradução da pasta locales e subpastas
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
   end
 end

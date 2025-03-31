@@ -1,14 +1,32 @@
-<nav class="navbar">
-  <ul>
-    <li><%= link_to "Home", root_path, class: "nav-link" %></li>
-
-    <% if user_signed_in? %> 
-    <li><%= current_user.email %></li>
-      <li><%= link_to "Sair", destroy_user_session_path, data: { turbo_method: :delete }, class: "nav-link" %></li>
-    <% else %>
-      <li><%= link_to "Cadastrar-se", new_user_registration_path, class: "nav-link" %></li>
-      <li><%= link_to "Entrar", new_user_session_path, class: "nav-link" %></li>
-    <% end %> 
-  </ul>
+<nav class="bg-gray-800 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <div class="flex items-center">
+        <%= link_to "E-Commerce", root_path, class: "text-xl font-bold text-white hover:text-gray-300" %>
+      </div>
+      <div class="hidden md:flex space-x-4">
+        <a href="/products" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Produtos</a>
+        <a href="/about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Sobre</a>
+        <a href="/contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contato</a>
+        <div class="flex items-center">
+        <ul class="flex space-x-4">
+          <% if user_signed_in? %>
+            <li class="text-gray-300 px-3 py-2 rounded-md text-sm font-medium">
+              <%= current_user.email %>
+            </li>
+            <li>
+              <%= link_to "Sair", destroy_user_session_path, data: { turbo_method: :delete }, class: "text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium" %>
+            </li>
+          <% else %>
+            <li>
+              <%= link_to "Cadastrar-se", new_user_registration_path, class: "text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium" %>
+            </li>
+            <li>
+              <%= link_to "Entrar", new_user_session_path, class: "text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium" %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
 </nav>
-
