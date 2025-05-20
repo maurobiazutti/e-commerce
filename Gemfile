@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem 'rdoc', '6.13.1'  # Use a versão mais recente
+gem 'rdoc', '6.14.0'  # Use a versão mais recente
 gem "rails", "~> 8.0.2"
 gem "propshaft"
 gem "pg", "~> 1.1"
