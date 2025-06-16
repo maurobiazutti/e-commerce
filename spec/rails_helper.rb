@@ -1,6 +1,9 @@
 require 'spec_helper'
 require 'vcr'
 require 'simplecov'
+require 'shoulda/matchers'
+require 'factory_bot_rails'
+require 'fake'
 
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
