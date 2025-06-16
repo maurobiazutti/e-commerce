@@ -1,5 +1,6 @@
 require 'spec_helper'
 require 'vcr'
+require 'simplecov'
 
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
@@ -38,3 +39,7 @@ VCR.configure do |config|
   config.cassette_library_dir = "fixtures/vcr"
   config.hook_into :webmock
 end
+
+# Configure SimpleCov to track code coverage
+SimpleCov.start
+SimpleCov.minimum_coverage 90
