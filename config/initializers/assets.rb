@@ -10,4 +10,4 @@ Rails.application.config.assets.paths << Rails.root.join("node_modules/bootstrap
 Rails.application.config.assets.precompile << "bootstrap.bundle.min.js"
 
 # config/initializers/assets.rb
-Rails.application.config.assets.precompile += %w(bootstrap.min.js popper.js)
+Rails.application.config.assets.precompile += %w[bootstrap.min.js popper.js]
