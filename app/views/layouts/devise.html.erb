@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= content_for(:title) || "Devise - E-Commerce" %></title>
+    <title><%= content_for(:title) || "E-Commerce" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
@@ -33,7 +33,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-6 text-center mb-5">
-            <h2 class="heading-section">Login #01</h2>
+            <h2 class="heading-section">E-Commerce</h2>
           </div>
         </div>
         <div class="row justify-content-center">
@@ -43,13 +43,12 @@
                 <span class="fa fa-user-o"></span>
               </div>
               <h3 class="text-center mb-4">Login</h3>
+              <%= render "layouts/shared/flash" if flash.present? %>
               <%= yield %>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    
   </body>
 </html>
