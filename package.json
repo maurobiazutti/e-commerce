@@ -2,7 +2,7 @@
   "name": "app",
 
   "scripts": {
-    "build:css:compile": "sass ./app/assets/stylesheets/application.bootstrap.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules",
+    "build:css:compile": "sass ./app/assets/stylesheets/application.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules",
     "build:css:devise:compile": "sass ./app/assets/stylesheets/devise.scss:./app/assets/builds/devise.css --no-source-map --load-path=node_modules",
     "build:css:devise": "yarn build:css:devise:compile",
     
