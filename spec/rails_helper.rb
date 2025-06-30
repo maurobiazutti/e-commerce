@@ -3,7 +3,7 @@ require 'vcr'
 require 'simplecov'
 require 'shoulda/matchers'
 require 'factory_bot_rails'
-require 'fake'
+require 'faker'
 
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
@@ -38,10 +38,10 @@ Shoulda::Matchers.configure do |config|
 end
 
 # Configure VCR to record HTTP interactions
-VCR.configure do |config|
-  config.cassette_library_dir = "fixtures/vcr"
-  config.hook_into :webmock
-end
+# VCR.configure do |config|
+#   config.cassette_library_dir = "fixtures/vcr"
+#   config.hook_into :webmock
+# end
 
 # Configure SimpleCov to track code coverage
 SimpleCov.start

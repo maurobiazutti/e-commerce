@@ -1,5 +1,15 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  context "Espero validar campos obligatorios" do
+    it "Valida campos" do
+      user = build(:user)
+      expect(user.valid?). to eq(true)
+    end
+
+    it "Valida campos nome vazio" do
+      user = build(:user, name: nil)
+      expect(user.valid?).to eq(false)
+    end
+  end
 end
