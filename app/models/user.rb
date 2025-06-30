@@ -5,6 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   validates :name, :phone, presence: true
-  validates :email, presence: true, uniqueness: { case_sensitive: false }
 
+  enum :role, { admin: 'admin', user: 'user' }
 end
