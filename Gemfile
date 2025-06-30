@@ -19,7 +19,7 @@ gem "devise"
 gem "simple_form"
 gem "bootstrap"
 gem "dartsass-rails"
-gem 'irb', '1.15'
+gem 'irb', '1.15.2'
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
