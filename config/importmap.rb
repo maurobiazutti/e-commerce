@@ -9,3 +9,5 @@ pin "bootstrap", to: "bootstrap.bundle.min.js"
 
 pin "bootstrap", to: "bootstrap.min.js", preload: true
 pin "@popperjs/core", to: "popper.js", preload: true
+
+pin "jquery" # @3.7.1
