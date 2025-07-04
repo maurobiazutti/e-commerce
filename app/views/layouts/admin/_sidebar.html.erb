@@ -104,6 +104,12 @@
                     <span>Tables</span></a>
             </li>
 
+            <li class="nav-item">
+                
+                <%= button_to 'Sign out' , destroy_user_session_path, method: :delete, data: { turbo_method: :delete },
+              class: "btn btn-danger btn-sm  " %>
+            </li>
+
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
